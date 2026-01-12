@@ -6,6 +6,8 @@ import Categories from "./Categories";
 import Category from "./Category";
 import Session from "./Session";
 import Header from "./Header";
+import Register from "./Register";
+import Confirmation from "./Confirmation";
 
 function App() {
   return (
@@ -18,15 +20,14 @@ function App() {
 
         {/* Categories parent */}
         <Route path="categories" element={<Categories />}>
-          
-          {/* Category page */}
           <Route path=":catId" element={<Category />}>
-            
-            {/* Session page (nested inside Category) */}
             <Route path=":sessionId" element={<Session />} />
-          
           </Route>
         </Route>
+
+        {/* Standalone pages */}
+        <Route path="register" element={<Register />} />
+        <Route path="confirmed" element={<Confirmation />} />
 
         <Route
           path="*"

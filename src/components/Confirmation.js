@@ -9,7 +9,7 @@ export default function Confirmation() {
 
       {state ? (
         <>
-          <p>{state.name}, you're now registered for Red30 Tech.</p>
+          <p>{state.name}, you're now registered for {state.course}.</p>
           <p>
             We have sent more details to <strong>{state.email}</strong>
           </p>

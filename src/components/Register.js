@@ -13,7 +13,8 @@ export default function Register() {
     navigate("/confirmed", {
       state: {
         name: nameRef.current.value,
-        email: emailRef.current.value
+        email: emailRef.current.value,
+        course: courseRef.current.value
       }
     });
   }

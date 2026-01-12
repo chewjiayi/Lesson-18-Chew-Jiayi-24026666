@@ -3,7 +3,7 @@ import chairImg from "../assets/PC.jpg";
 export default function About() {
   return (
     <div className="container about-page">
-      <h1 className="about-title">🏫 School of Infocomm</h1>
+      <h1 className="about-title"> School of Infocomm</h1>
 
       <p className="about-intro">
         The <strong>School of Infocomm (SOI)</strong> at Republic Polytechnic is where

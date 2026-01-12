@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Link } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-
+    
       <Routes>
         <Route path="/" element={<Home title="Welcome to Red30 Tech" />} />
         <Route path="about" element={<About />} />
